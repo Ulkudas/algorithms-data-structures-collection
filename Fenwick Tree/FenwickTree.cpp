@@ -1,6 +1,5 @@
 #include "FenwickTree.h"
-#include <cstring>
-#include <cstdio>
+
 FenwickTree::FenwickTree(void) {
     size = 0;
     tree = NULL;     
