@@ -1,5 +1,5 @@
 ### Quick Sort, Merge Sort & Selection Sort
-This is a basic analysis on quick sort, merge sort & selection sort algorithms to show their powers and weaknesses on arrays with different sizes and orders. 
+This is a simple analysis on quick sort, merge sort & selection sort algorithms to show their powers and weaknesses on arrays with different sizes and orders. 
 
 
 In the following, charts of the execution time of these algorithms are shown. Note that the left axis represents the time in milliseconds in a logarithmically scaled fashion.
