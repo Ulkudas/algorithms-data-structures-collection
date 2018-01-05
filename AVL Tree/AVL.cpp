@@ -52,7 +52,7 @@ void AVL::add(const string given) {
 		return;
 	}
 
-	while (current != NULL){	
+	while (current != NULL) {	
 		if (current->item > given) {	
 			if (findHeight(current->left) > findHeight(current->right)) {
 				predecessor = preTemp; 
@@ -124,7 +124,7 @@ int AVL::findHeight(Node* current) {
 // searches an item in the tree, if not found prints out suggestions
 void AVL::search(const string given) {
 	if (isEmpty()) {
-		cout<<" Not found!" <<endl;
+		cout<<" Not found!"<<endl;
 		return;
 	}
 		
@@ -149,7 +149,7 @@ void AVL::search(const string given) {
 	printSuggestions(root, given, flag);
 
 	if (flag)
-		cout <<"No suggestions for this word!";
+		cout<<"No suggestions!";
 	cout<<endl;
 }
 
@@ -160,7 +160,7 @@ void AVL::printSuggestions(Node *current, const string given, bool &flag) {
 	
 	for (int i = 0; i < min(given.size(), current->item.size()) && given[i] == current->item[i]; ++i)
 		if (i >= given.size()/2) {
-			cout<< current->item << " "; 
+			cout<<current->item<<" "; 
 			flag = false;
 			break;
 		}
